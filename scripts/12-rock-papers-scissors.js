@@ -71,7 +71,7 @@ function playGame(p1)
           r='Computer picked Scissors.Tie'
         }
         calScore(result);
-        theory(p1,r1);
+        theory(p1.toLowerCase(),r1.toLowerCase());
         
         return r+'\n'+`Wins: ${score.win},Losses: ${score.lose},Ties:${score.tie}`
     
@@ -97,7 +97,7 @@ function playGame(p1)
       r='Computer picked Scissors.You Lose'
     }
     calScore(result);
-    theory(p1,r1);
+    theory(p1.toLowerCase(),r1.toLowerCase());
 
     return r+'\n'+`Wins: ${score.win},Losses: ${score.lose},Ties:${score.tie}`
 
@@ -123,7 +123,8 @@ function playGame(p1)
         r='Computer picked Scissors.You win'
       }
       calScore(result);
-      theory(p1,r1);
+
+      theory(p1.toLowerCase(),r1.toLowerCase());
       return r+'\n'+`Wins: ${score.win},Losses: ${score.lose},Ties:${score.tie}`
    }
 }
@@ -236,7 +237,7 @@ function autoPlay() {
       
       
       playGame(move);
-    }, 1000);
+    }, 2000);
     autoPlaying=true;
   }
   else{
