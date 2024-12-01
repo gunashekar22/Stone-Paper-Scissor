@@ -188,10 +188,10 @@ document.querySelector('.js-score').innerHTML=`Wins:${score.win} ,Losses:${score
 // document.querySelector('.js-score').innerHTML=`Wins:${score.win} ,Losses:${score.lose} ,Ties:${score.tie}`;
 function theory(p1,r1)
  {
-   
+   //first-p1,second-r1
   document.querySelector('.js-moves').innerHTML=
-  `You <img src="images/${p1}-emoji.png" class="img-edit">
-<img src="images/${r1}-emoji.png" class="img-edit"> computer`
+  `You <img src="images/${paper}-emoji.png" class="img-edit">
+<img src="images/${paper}-emoji.png" class="img-edit"> computer`
 }
 let autoPlaying=false;
 let intervalId;
