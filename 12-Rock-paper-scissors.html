@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Rock Paper Scissors
+    </title>
+    <link rel="stylesheet" href="styles/12-rock-paper-scissors.css">
+    
+
+  </head>
+  <body>
+    <div class="contain">
+    <p class="title-name">Rock Paper Scissors</p>
+    <!-- rock -->
+    <button onclick="
+        // c=pickComputer();
+        // v=playGame('Rock');
+        console.log('You picked rock.'+v)
+        " class="mov-button js-rock" ><img src="images/rock-emoji.png" class="img-edit">
+    </button>
+    <!-- paper -->
+    <button 
+      class="mov-button js-paper"
+      onclick="
+      // c=pickComputer();
+      // v=playGame('Paper');
+      console.log('You picked Paper.'+v) "><img src="images/paper-emoji.png" class="img-edit">
+    </button>
+    <!-- Scissors -->
+    <button onclick="
+      // c=pickComputer();
+      // v=playGame('Scissors');
+      console.log('You picked Scissors.'+v)"
+      class="mov-button js-scissors"
+      ><img src="images/scissors-emoji.png" class="img-edit">
+    </button>
+    <p class="js-result"></p>
+    <p class="js-moves">
+      
+    </p>
+    <p class="js-score"></p>
+    <!-- reset button -->
+    <button onclick="
+    reset(); 
+    " class='reset-button'>
+      Reset Score
+    </button>
+    <button class="Auto-play-button" onclick="autoPlay()">Auto Play
+    </button>
+    <p class="conf-mes"></p>
+  </div>
+    <script src="scripts/12-rock-papers-scissors.js">
+    </script>
+  </body>
+</html>
